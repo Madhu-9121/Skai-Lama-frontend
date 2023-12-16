@@ -1,0 +1,46 @@
+/* menu btn styles */
+.childParent{
+  width: 305px;
+  height: 70.2px;
+  border-radius: 132.5px;
+  margin-top: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 20px;
+  color: #49454F;
+
+}  
+.name{
+  font-family: sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 0.1px;
+  margin-left: 20px;
+} 
+.childParent:hover{
+  background-color: #7E22CE;
+  color: #fff;
+}
+.childParent:hover .num {
+  background-color: #211935;
+}
+.num{
+
+  font-size: 18.55px;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  background-color: #2b2a2e1f;
+  border-radius: 30px;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 30px;
+}

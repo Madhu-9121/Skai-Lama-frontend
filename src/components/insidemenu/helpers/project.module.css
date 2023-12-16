@@ -1,0 +1,158 @@
+.parent{
+    margin-left: 428px;
+
+    
+}
+.upNav{
+    /* margin-left: 448px; */
+    /* margin-top: 72px; */
+    position: fixed;
+    top: 28px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 428px;
+
+}
+.navletter{
+    margin-left: 10px;
+    color: #999;
+font-family: sans-serif;
+font-size: 22.176px;
+font-style: normal;
+font-weight: 600;
+line-height: 45.965px; /* 142.857% */
+letter-spacing: 0.23px;
+padding-top: 10px;
+
+}
+
+.upload{
+    color: #7E22CE;
+font-family: sans-serif;
+font-size: 30px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+padding: 10px;
+}
+
+.btnParent{
+    /* display: flex; */
+    margin-right: 40px;
+
+}
+.child{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.or{
+    text-align: center;
+    font-family: sans-serif;
+    color: #999;
+font-family: Roboto;
+font-size: 30.72px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-top: 30px;
+}
+
+.uploadParent{
+    margin-top: 20px;
+    width: 1051px;
+    height: 300px;
+    border: 3px dotted #999999;
+    border-radius: 10px;
+    margin-bottom: 100px;
+    text-align: center;
+    padding: 20px;
+}
+
+.uploadText{
+    color: #49454F;
+font-family: sans-serif;
+font-size: 30.332px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.uploadText2{
+    color: rgba(0, 0, 0, 0.40);
+font-family: sans-serif;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+/* data sheet for new task */
+.createProjectTab{
+    width: 1000px;
+    height: 400px;
+    background-color: rgb(227, 227, 225);
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 12px;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    position: relative;
+    border: 1px solid black;
+    /* padding-bottom: auto; */
+}
+.tabHead{
+    font-family: sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    color: black;
+}
+
+.inputBar{
+    /* margin-top: 20px; */
+    display: block;
+    width: 900px;
+    height: 50px;
+    border-radius: 8px;
+    border: 1px solid #000;
+    background: #FFF;
+    padding-left: 30px;
+
+}
+
+.sbbtn{
+    
+    background-color: #211935;
+    border: 10px solid #211935;
+    /* border: 0px; */
+    border-radius: 8px;
+    color: #F8F8F8;
+    font-family: sans-serif Roboto;
+    font-size: 20.28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-left: 89%;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+
+.cross{
+    font-size: 30.28px;
+    color: #3C3C3C;
+    margin-bottom: 40px;
+
+
+}
+
+.tableCards{
+    margin-left: 428px;
+    display: flex;
+    justify-content: start;
+    column-gap: 20px;
+    align-items: center;
+    margin-right: 40px;
+
+}

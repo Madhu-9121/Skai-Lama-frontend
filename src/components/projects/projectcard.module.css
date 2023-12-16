@@ -1,0 +1,68 @@
+.main{
+    /* margin-left: 185px; */
+    width: 352.021px;
+    height: 145.344px;
+   flex-shrink: 0;
+   border-radius: 26.17px;
+border: 1.19px solid #999;
+background: #FFF;
+box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.06), 1.19px 2.379px 5.948px 0px rgba(0, 0, 0, 0.06), 4.758px 9.516px 10.706px 0px rgba(0, 0, 0, 0.05), 10.706px 21.412px 14.274px 0px rgba(0, 0, 0, 0.03), 19.032px 38.065px 16.653px 0px rgba(0, 0, 0, 0.01), 29.738px 58.287px 19.032px 0px rgba(0, 0, 0, 0.00);
+display: flex;
+justify-content: space-around;
+align-items: center;
+padding: 10px;
+cursor: pointer;
+}
+
+.short{
+    color: #FFF;
+font-family: sans-serif;
+font-size: 77.954px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+background-color: #7E22CE;
+/* width: 152.396px; */
+/* height: 140.007px; */
+flex-shrink: 0;
+text-align: center;
+/* border-radius: 18.212px; */
+background: #7E22CE;
+vertical-align: middle;
+}
+.text{
+    color: #969696;
+font-family: sans-serif;
+font-size: 15.819px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+font-family: sans-serif;
+
+}
+.episode{
+    color: #3C3C3C;
+font-family: sans-serif;
+
+font-size: 15.819px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.title{
+    color: #7E22CE;
+font-family: sans-serif;
+font-size: 25.31px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.shortParent{
+    border: 10px solid #7E22CE ;
+border-radius: 18.212px;
+
+    width: 152.396px; 
+    /* height: 140.007px; */
+    text-align: center;
+}

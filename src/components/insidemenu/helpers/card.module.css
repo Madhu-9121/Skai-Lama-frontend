@@ -1,0 +1,27 @@
+.parent{
+    border-radius: 22px;
+border: 1px solid #999;
+background: #FFF;
+box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.06), 1px 2px 5px 0px rgba(0, 0, 0, 0.06), 4px 8px 9px 0px rgba(0, 0, 0, 0.05), 9px 18px 12px 0px rgba(0, 0, 0, 0.03), 16px 32px 14px 0px rgba(0, 0, 0, 0.01), 25px 49px 16px 0px rgba(0, 0, 0, 0.00);
+    width: 300px;
+height: 139px;
+flex-shrink: 0;
+fill: #FFF;
+stroke-width: 1px;
+stroke: #999;
+filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.06)) drop-shadow(1px 2px 5px rgba(0, 0, 0, 0.06)) drop-shadow(4px 8px 9px rgba(0, 0, 0, 0.05)) drop-shadow(9px 18px 12px rgba(0, 0, 0, 0.03)) drop-shadow(16px 32px 14px rgba(0, 0, 0, 0.01)) drop-shadow(25px 49px 16px rgba(0, 0, 0, 0.00));
+display: flex;
+justify-content: space-around;
+align-items: center;
+margin-top: 10px;
+padding: 10px;
+}
+.para{
+    color: #3C3C3C;
+font-family: sans-serif;
+font-size: 20.643px;
+font-style: normal;
+font-weight: 700;
+line-height: 33.061px; /* 124.09% */
+letter-spacing: 0.19px;
+}

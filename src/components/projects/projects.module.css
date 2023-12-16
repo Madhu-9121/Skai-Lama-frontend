@@ -1,0 +1,182 @@
+.header{
+    /* margin-left: 600px; */
+    /* margin-right: 600px; */
+    text-align: center;
+    color: #7E22CE;
+    font-family: sans-serif Roboto;
+    font-size: 73.411px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 0px;    
+    margin-bottom: 0px;
+}
+
+.homeParent{
+    width: 188.692px;
+height: 41px;
+flex-shrink: 0;
+    border-radius: 35.323px;
+    border: 0.75px solid #999;
+    background: #FFF;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.06), 0.75px 1.501px 3.752px 0px rgba(0, 0, 0, 0.06), 3.001px 6.003px 6.753px 0px rgba(0, 0, 0, 0.05), 6.753px 13.506px 9.004px 0px rgba(0, 0, 0, 0.03), 12.005px 24.01px 10.504px 0px rgba(0, 0, 0, 0.01), 18.758px 36.766px 12.005px 0px rgba(0, 0, 0, 0.00);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 185px;
+}
+
+.groupimg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0%;
+}
+.para{
+    width: 1295px;
+    
+    color: #838383;
+text-align: center;
+font-family: Roboto;
+font-size: 30px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-align: center;
+
+}
+.parahead{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.projectBtn{
+    background-color: #211935;
+    border: 0px;
+
+color: #F8F8F8;
+font-family: sans-serif Roboto;
+font-size: 46.28px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.projectBtnHead{
+    border-radius: 12.89px;
+    background: #211935;
+    width: 569.827px;
+    height: 109.916px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    cursor: pointer;
+
+}
+
+/* project tab creation */
+.createProjectTab{
+    width: 1000px;
+    height: 400px;
+    background-color: rgb(227, 227, 225);
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 12px;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    /* padding-bottom: auto; */
+}
+.tabHead{
+    font-family: sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    color: black;
+}
+
+.inputBar{
+    margin-top: 20px;
+    display: block;
+    width: 900px;
+    height: 50px;
+    border-radius: 10px;
+    border: 2px solid rgb(66, 66, 66);
+
+}
+.btnparentTab{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.btnTab{
+    background-color: #7E22CE;
+    border: 10px solid #7E22CE;
+    /* border: 0px; */
+    border-radius: 8px;
+    color: #F8F8F8;
+    font-family: sans-serif Roboto;
+    font-size: 20.28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.cardTitle{
+    /* margin-left: 185px; */
+    color: #7E22CE;
+font-family: sans-serif;
+font-size: 73.411px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.cardAddButton{
+    width: 376.173px;
+height: 72.561px;
+flex-shrink: 0;
+border-radius: 8.509px;
+background: #211935;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.insideCardBtn{
+    color: #F8F8F8;
+background: #211935;
+border: 0px;
+font-family: Roboto;
+font-size: 30.552px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.cardTopParent{
+    margin-left: 185px;
+    margin-right: 185px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.projectContainer{
+    display: flex;
+    flex-wrap: wrap;
+  column-gap: 56px;
+  row-gap: 36px;
+  margin-left: 185px;
+  margin-top: 50px;
+
+}

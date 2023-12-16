@@ -1,0 +1,47 @@
+.logo{
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 50.84px;
+    height: 50.84px;
+    flex-shrink: 0;
+}
+.brand{
+    color: #7E22CE;
+font-family: sans-serif  Jakarta Sans;
+font-size: 37.743px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+width: 134.366px;
+height: 54.35px;
+flex-shrink: 0;
+margin-top: 28px;
+width: 134.366px;
+height: 54.35px;
+flex-shrink: 0;
+
+}
+.logoparent{
+    display: flex;
+    /* align-items: center; */
+    justify-content: left;
+}
+
+
+.topParent{
+    display: flex;
+    justify-content: space-between;
+}
+
+.rightItems{
+    margin-right: 30px;
+
+}
+.settings{
+    height: 54px;
+    width: 54px;
+    margin-right: 19px;
+    margin-top: 30px;
+    
+
+}
