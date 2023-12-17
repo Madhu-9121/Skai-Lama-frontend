@@ -9,12 +9,15 @@ const RenderDataTable = ({ pname, tasks ,setTasks}) => {
   const handleDelete = async (name) => {
     try {
       const email = localStorage.getItem("userEmail");
+      console.log("email:",email,"name:",name,"pname:",pname)
       await axios.delete(`http://localhost:3000/v1/user/${email}/delete`, {
         data: {
           itemName: name,
           projectName: pname,
         },
       })
+      // console.log(data)
+
       setTasks((prevTasks) => prevTasks.filter((task) => task.ItemName !== name))
     } catch (error) {
       console.error("Error deleting item:", error);
@@ -46,7 +49,7 @@ const RenderDataTable = ({ pname, tasks ,setTasks}) => {
           <tbody>
             {tasks.map((row) => (
               <tr key={row._id}>
-                <td>{row.ItemName}</td>
+                <td>{row.ItemName || row.name}</td>
                 <td>{new Date().toLocaleString()}</td>
                 <td>Done</td>
                 <td>

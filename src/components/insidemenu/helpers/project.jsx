@@ -30,17 +30,15 @@ const Project = ({pname,tab,data}) => {
   },[ data])
 
   const handleUploadClick = () => {
-    const email = localStorage.getItem('userEmail')
-    const apiUrl = `http://localhost:3000/v1/user/${email}/newtask`;
+    const email = localStorage.getItem('userEmail');
     console.log(email)
-
+    const apiUrl = `http://localhost:3000/v1/user/${email}/newtask`;
     const requestData = {
       "projectName": pname,
       "itemName": itemName,
       "content": content
-    } 
-    // console.log(requestData)
-
+    };
+  console.log(requestData)
     fetch(apiUrl, {
       method: 'POST',
       headers: {
@@ -48,17 +46,18 @@ const Project = ({pname,tab,data}) => {
       },
       body: JSON.stringify(requestData),
     })
-      .then((response) => response.json())
-      .then((data) => {
-        console.log("tasks add call",data)
-        setCreateProjectTabOpen(false);
-        setTasks((prevTasks) => [...prevTasks, data]);
-        setUploadSuccess(true);
-     })
-      .catch((error) => {
-        console.error('Error:', error);
-      });
+    .then((response) => response.json())
+    .then((data) => {
+      console.log("tasks add call", data);
+      setCreateProjectTabOpen(false);
+      setTasks((prevTasks) => [...prevTasks, data]);
+      setUploadSuccess(true);
+    })
+    .catch((error) => {
+      console.error('Error:', error);
+    });
   };
+  
 
 // logic for handling interfaces
   const renderUploadInterface = () => (
