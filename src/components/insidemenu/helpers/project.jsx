@@ -32,7 +32,7 @@ const Project = ({pname,tab,data}) => {
   const handleUploadClick = () => {
     const email = localStorage.getItem('userEmail');
     console.log(email)
-    const apiUrl = `http://localhost:3000/v1/user/${email}/newtask`;
+    const apiUrl = `${'https://skailama-backend-final.onrender.com'}/v1/user/${email}/newtask`;
     const requestData = {
       "projectName": pname,
       "itemName": itemName,
@@ -47,10 +47,14 @@ const Project = ({pname,tab,data}) => {
       body: JSON.stringify(requestData),
     })
     .then((response) => response.json())
+    
     .then((data) => {
-      console.log("tasks add call", data);
+      console.log("tasks response", data);
+
       setCreateProjectTabOpen(false);
-      setTasks((prevTasks) => [...prevTasks, data]);
+      setTasks(data.items);
+      console.log("tasks added", tasks);
+
       setUploadSuccess(true);
     })
     .catch((error) => {
@@ -122,6 +126,9 @@ const Project = ({pname,tab,data}) => {
           <img src={cloud} alt="upload" />
           <p className={styles.uploadText}>Select a file or drag and drop here (Podcast Media or Transcription Text)</p>
           <p className={styles.uploadText2}>MP4, MOV, MP3, WAV, PDF, DOCX or TXT file </p>
+          <div className={styles.selectFile}>
+            <p>Select File</p>
+          </div>
         </div>
       
     </div>) : (

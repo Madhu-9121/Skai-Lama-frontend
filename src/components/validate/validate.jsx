@@ -44,8 +44,10 @@ const Validate = () => {
     return isValid
   };
   const handleRegistration = () => {
-    axios
-      .post('http://localhost:3000/v1/user', {
+
+    console.log("called",'https://skailama-backend-final.onrender.com')
+    axios 
+      .post(`${'https://skailama-backend-final.onrender.com'}/v1/user`, {
         email: email,
         projects: [],
       })
@@ -62,7 +64,7 @@ const Validate = () => {
   };
   const handleLogin = (loginEmail) => {
     axios
-      .get(`http://localhost:3000/v1/${loginEmail}`)
+      .get(`${'https://skailama-backend-final.onrender.com'}/v1/${loginEmail}`)
       .then((response) => {
         setResponseData(response.data.projects);
         console.log('User logged in:', response.data.projects);
@@ -94,14 +96,15 @@ const Validate = () => {
 
 
     {!showProjects ? (<div className={styles.main}>
-        <h1 style={{"marginTop":"10px",fontFamily:"sans-serif","marginBottom":"10px"}}> Welcome to LAMA..!!</h1>
+        <h1 className={styles.welcome}> Welcome to LAMA..!!  <span style={{fontSize:"22px",color:"grey",display:'block',marginTop:'10px'}}>manage your workload by utilizing LAMA</span></h1>
+       
       <div className={styles.btnParent}>
         <button className={`${styles.btn} ${activeButton === 'login' ? styles.activeBtn : ''}`} onClick={() => handleLoginButton()}>Already Registered</button>
         <button className={`${styles.btn} ${activeButton === 'register' ? styles.activeBtn : ''}`} onClick={() => handleRegisterButton()}>New to Here</button>
       </div>
 
       
-        <div>
+        <div className={styles.inputAndSubmit}>
   
           <input
             className={styles.inputBar}
@@ -110,7 +113,7 @@ const Validate = () => {
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Enter your email"
           />
-        <button className={styles.sbbtn} onClick={handleSubmit} style={{ marginTop:"20px"}} >Submit</button>
+         <button className={styles.sbbtn} onClick={handleSubmit} style={{ marginTop:"20px"}} >Submit</button>
 
         </div>
 

@@ -45,7 +45,7 @@ const Projects = ({ responseData }) => {
     // For example:
     const email = localStorage.getItem("userEmail");
     // console.log(email)
-    fetch(`http://localhost:3000/v1/user/${email}/projects`, {
+    fetch(`${'https://skailama-backend-final.onrender.com'}/v1/user/${email}/projects`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -67,7 +67,8 @@ const Projects = ({ responseData }) => {
 
   return (
     <div>
-        {!enterToProject ? (<div>
+        {!enterToProject ? (
+        <div>
         <div className={styles.homeParent}>
             <img src={home} alt="home" />
             <p style={{ color: "black", marginLeft: "2px" }}>Back to Home</p>

@@ -25,6 +25,11 @@
   background-color: #7E22CE;
   color: #fff;
 }
+.selected{
+  background-color: #7E22CE;
+  color: #fff;
+
+}
 .childParent:hover .num {
   background-color: #211935;
 }

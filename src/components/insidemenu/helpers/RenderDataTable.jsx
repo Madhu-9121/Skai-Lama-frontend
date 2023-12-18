@@ -10,7 +10,7 @@ const RenderDataTable = ({ pname, tasks ,setTasks}) => {
     try {
       const email = localStorage.getItem("userEmail");
       console.log("email:",email,"name:",name,"pname:",pname)
-      await axios.delete(`http://localhost:3000/v1/user/${email}/delete`, {
+      await axios.delete(`${'https://skailama-backend-final.onrender.com'}/v1/user/${email}/delete`, {
         data: {
           itemName: name,
           projectName: pname,
