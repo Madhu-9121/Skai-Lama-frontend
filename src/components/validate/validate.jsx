@@ -12,7 +12,7 @@ const Validate = () => {
   const [responseData, setResponseData] = useState(null);
   const [showProjects, setShowProjects] = useState(false);
   const [activeButton, setActiveButton] = useState('');
-
+  // const [loading, setLoading] = useState(false);
   useEffect(() => {
     // Check email is there in local storage ...................uncommnet the below line and above email state to "" used for default email login
     const storedEmail = localStorage.getItem('userEmail');

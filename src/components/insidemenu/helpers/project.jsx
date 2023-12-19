@@ -8,8 +8,7 @@ import rss from '../../../assets/rss.svg'
 import cloud from '../../../assets/cloud_upload.svg'
 import RenderDataTable from './RenderDataTable'
 import ellipse from '../../../assets/Ellipse3.svg'
-
-
+import EditIterface from './editIterface'
 
 const Project = ({pname,tab,data}) => {
   const [isCreateProjectTabOpen, setCreateProjectTabOpen] = useState(false);
@@ -18,12 +17,13 @@ const Project = ({pname,tab,data}) => {
   const [clickedCard,setClickedCard] = useState("")
   const [tasks, setTasks] = useState([]);
   const [uploadSuccess, setUploadSuccess] = useState(false);
-
+  const [editclicked,setEditClicked] = useState(false)
+  const [editTask,setEditTask] =useState('')
   useEffect(()=>{
     if (Array.isArray(data) && data.length>=1) {
       setTasks(data)
       setUploadSuccess(true)
-      console.log("received data task:",typeof data);
+      console.log("received data task:", data);
     }
 
 
@@ -97,8 +97,8 @@ const Project = ({pname,tab,data}) => {
 
   return (
     <>
-    {isCreateProjectTabOpen ?  (
-      renderUploadInterface()
+    {isCreateProjectTabOpen || editclicked ?  (
+      isCreateProjectTabOpen ? renderUploadInterface(): <EditIterface setEditClicked={setEditClicked} pname={pname} tab={tab} task={tasks.filter((i)=>i.ItemName===editTask)}/>
     ):(
       <>
       <div className={styles.upNav}>
@@ -139,7 +139,7 @@ const Project = ({pname,tab,data}) => {
             <UploaCard cardname={setClickedCard} tabOpen={setCreateProjectTabOpen}  src={spo} name={"Spotify Podcast"}text={"Upload"} />
             <UploaCard cardname={setClickedCard} tabOpen={setCreateProjectTabOpen}  src={ellipse} name={"or Text File"}text={"Upload Media"} />
           </div>
-        <RenderDataTable pname={pname} tasks={tasks} setTasks = {setTasks}/>
+        <RenderDataTable setEditClicked={setEditClicked} setEditTask ={setEditTask}pname={pname} tasks={tasks} setTasks = {setTasks}/>
        </>
       
        

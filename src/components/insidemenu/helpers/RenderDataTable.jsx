@@ -1,8 +1,9 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./table.module.css";
 import axios from "axios";
 
-const RenderDataTable = ({ pname, tasks ,setTasks}) => {
+const RenderDataTable = ({ pname, tasks ,setTasks,setEditClicked,setEditTask}) => {
+
   useEffect(() => {
     console.log("in table:", tasks);
   }, [tasks]);
@@ -16,7 +17,7 @@ const RenderDataTable = ({ pname, tasks ,setTasks}) => {
           projectName: pname,
         },
       })
-      // console.log(data)
+    
 
       setTasks((prevTasks) => prevTasks.filter((task) => task.ItemName !== name))
     } catch (error) {
@@ -24,8 +25,10 @@ const RenderDataTable = ({ pname, tasks ,setTasks}) => {
     }
   };
 
-  const handleEdit = (itemId) => {
-    
+  const handleEdit = (name) => {
+    setEditClicked(true)
+    setEditTask(name)
+    console.log(name)
   };
 
   return (
